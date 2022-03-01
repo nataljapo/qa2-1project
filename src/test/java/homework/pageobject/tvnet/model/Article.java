@@ -13,6 +13,7 @@ public class Article {
     public void setTitle(String title) {
         this.title = title;
     }
+
     public void setTitle(WebElement webElement) {
         String titleToParse = webElement.getText();
         String[] title = titleToParse.split(" ");
