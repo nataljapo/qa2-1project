@@ -1,8 +1,7 @@
 Feature: Weather forecast
 
   Scenario: Weather for specific city
-    Given city name is "Cairns"
-    And country is "AU"
+    Given city id is 524901
     When we are requesting weather data
 
     Then coordinates are:
@@ -10,8 +9,10 @@ Feature: Weather forecast
       | lat | -16.92 |
 
     And weather is:
-      | id  | main   | description      | icon |
-      | 802 | Clouds | scattered clouds | 03n  |
+      | id          | 802              |
+      | main        | Clouds           |
+      | description | scattered clouds |
+      | icon        | 03n              |
 
     And base is "stations"
 
@@ -28,10 +29,9 @@ Feature: Weather forecast
       | speed | 3.6 |
       | deg   | 160 |
 
-    And clouds are:
-      | all | 40 |
-
+    And all is 40
     And dt is 1485790200
+
     And sys is:
       | type    | 1          |
       | id      | 8166       |
