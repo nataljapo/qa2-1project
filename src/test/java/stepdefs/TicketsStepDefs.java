@@ -74,7 +74,7 @@ public class TicketsStepDefs {
 
     @When("we are filling in personal info")
     public void fill_personal_info_form() {
-        LOGGER.info("Filling personal information");
+        LOGGER.info("Filling in personal information");
         infoPage.fillInPersonalInfoForm(givenReservation);
     }
 
