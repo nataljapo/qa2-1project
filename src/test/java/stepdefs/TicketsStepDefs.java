@@ -151,9 +151,9 @@ public class TicketsStepDefs {
         Assertions.assertEquals(givenReservation.getSurname(), actualReservation.getSurname(), "Incorrect surname!");
         Assertions.assertEquals(givenReservation.getBagCount(), actualReservation.getBagCount(), "Incorrect bag count!");
         Assertions.assertEquals(givenReservation.getDiscount(), actualReservation.getDiscount(), "Incorrect discount!");
-        Assertions.assertEquals(givenReservation.getChildren(), actualReservation.getChildren(), "Wrong children count!");
-        Assertions.assertEquals(givenReservation.getFlightDay(), actualReservation.getFlightDay(), "Wrong flight date!");
-        Assertions.assertEquals(givenReservation.getAdultCount(), actualReservation.getAdultCount(), "Wrong adult count!");
-        Assertions.assertEquals(givenReservation.getSeat(), actualReservation.getSeat(), "Wrong seat!");
+        Assertions.assertEquals(givenReservation.getChildren(), actualReservation.getChildren(), "Incorrect children count!");
+        Assertions.assertEquals(givenReservation.getFlightDay(), actualReservation.getFlightDay(), "Incorrect flight date!");
+        Assertions.assertEquals(givenReservation.getAdultCount(), actualReservation.getAdultCount(), "Incorrect adult count!");
+        Assertions.assertEquals(givenReservation.getSeat(), actualReservation.getSeat(), "Incorrect seat!");
     }
 }

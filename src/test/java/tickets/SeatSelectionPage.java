@@ -14,7 +14,6 @@ public class SeatSelectionPage {
     private final By BOOK_BTN = By.id("book3");
     private BaseFunc baseFunc;
 
-
     public SeatSelectionPage(BaseFunc baseFunc) {
         this.baseFunc = baseFunc;
     }
