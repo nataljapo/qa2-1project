@@ -1,21 +1,19 @@
 package objects;
 
 public class Student {
-    //---------ATTRIBUTES---------
+
     private String firstName;
     private String lastName;
     private int age;
     private String phone;
     private String email;
 
-    //--------CONSTRUCTOR----------
     public Student(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
     }
     public Student() {}
 
-    //--------GETTERS/SETTERS------
     public String getFirstName() {
         return firstName;
     }
@@ -47,6 +45,7 @@ public class Student {
     public void setPhone(String phone) {
         this.phone = phone;
     }
+
     public void setPhone(long phone) {
         this.phone = String.valueOf(phone);
     }
@@ -59,7 +58,6 @@ public class Student {
         this.email = email;
     }
 
-    //-----CUSTOM METHODS--------
     public String getFullName() {
         return firstName + " " + lastName;
     }
