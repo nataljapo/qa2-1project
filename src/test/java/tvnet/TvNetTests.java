@@ -39,7 +39,6 @@ public class TvNetTests {
                 break;
             }
         }
-
         WebElement articlePageTitle = browser.findElement(ARTICLE_PAGE_TITLE);
         Assertions.assertEquals(GIVEN_TITLE, articlePageTitle.getText(), "Wrong title!");
     }
