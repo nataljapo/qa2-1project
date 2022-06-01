@@ -6,15 +6,13 @@ public class ObjectsPractice {
     @Test
     public void workingWithObjects() {
         Student pavel = new Student("Pavel", "Testerovich");
-//        pavel.setFirstName("Pavel");
-//        pavel.setLastName("Testerovich");
         pavel.setAge(80);
         pavel.setPhone(37122222222L);
 
         Student nadja = new Student();
         nadja.setFirstName("Nadezhda");
-        nadja.setLastName("Fig vam a ne ljubovj");
-        nadja.setAge(69);
+        nadja.setLastName("Nadezhdova");
+        nadja.setAge(60);
         nadja.setPhone("911");
 
         System.out.println("First student: " + nadja.getFirstName() + " " + nadja.getLastName());
