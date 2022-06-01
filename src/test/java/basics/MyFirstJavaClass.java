@@ -4,17 +4,14 @@ import org.junit.jupiter.api.Test;
 
 public class MyFirstJavaClass {
     public int sumTwoDigits(int a, int b) {
-//        int someDigit = null;
-//        Integer otherDigit = null;
         int c = a + b;
         return c;
     }
 
     public int minus(int a, int b) {
-//        int c = a-b;
         return a - b;
-
     }
+
     @Test
     public void test() {
        int a = sumTwoDigits(7, 13);
@@ -25,12 +22,4 @@ public class MyFirstJavaClass {
        System.out.println(b);
        System.out.println(c);
     }
-
-    //One string comment
-
-    /*
-     * *Multiple
-     * Strings
-     * Comments
-     */
 }
