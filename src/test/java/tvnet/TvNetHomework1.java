@@ -39,7 +39,6 @@ public class TvNetHomework1 {
         String homePageTitleText = homePageArticle.findElement(ARTICLE_TITLE).getText();
 
         int homePageCommentsAmount = 0;
-
         if (!homePageArticle.findElements(HOME_PAGE_COMMENTS).isEmpty()) {
             String homePageComments = homePageArticle.findElement(HOME_PAGE_COMMENTS).getText();
             homePageComments = homePageComments.substring(1, homePageComments.length() - 1);
