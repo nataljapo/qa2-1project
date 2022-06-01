@@ -32,40 +32,18 @@ public class TvNetTests {
         wait.until(ExpectedConditions.elementToBeClickable(ACCEPT_COOKIES_BTN));
         browser.findElement(ACCEPT_COOKIES_BTN).click();
 
-        WebElement firstTitle = browser.findElement(ARTICLE_TITLE);
-//        System.out.println(firstTitle.getText());
-
         List<WebElement> titles = browser.findElements(ARTICLE_TITLE);
-
-        //------------------FOR-------------------
-//        for (int i = 0; i < titles.size(); i++) {
-//            System.out.println(i + 1 + ": " + titles.get(i).getText());
-//        }
-
-        //------------------FOREACH---------------
         for (WebElement title : titles) {
-//            System.out.println(title.getText());
             if (title.getText().startsWith(GIVEN_TITLE)) {
                 title.click();
                 break;
             }
         }
 
-        //------------------WHILE------------------
-//        int i = 0;
-//        while (i < titles.size()) {
-//            System.out.println(i + 1 + ": " + titles.get(i).getText());
-//            i++;
-//        }
-
-//        System.out.println(titles.get(0).getText());
-//        titles.get(0).click();
         WebElement articlePageTitle = browser.findElement(ARTICLE_PAGE_TITLE);
-//        System.out.println(articlePageTitle.getText());
         Assertions.assertEquals(GIVEN_TITLE, articlePageTitle.getText(), "Wrong title!");
-
-
     }
+
     @AfterEach
     public void closeBrowser() {
         browser.close();

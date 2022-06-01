@@ -10,7 +10,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.sql.SQLOutput;
 import java.time.Duration;
 import java.util.List;
 
@@ -60,13 +59,10 @@ public class TvNetHomework1 {
 
         Assertions.assertTrue(homePageTitleText.startsWith(articlePageTitleText), "Wrong title!");
         Assertions.assertEquals(homePageCommentsAmount, articlePageCommentsAmount, "Wrong amount!");
-
     }
 
     @AfterEach
     public void closeBrowser() {
-
         browser.close();
     }
-
 }
