@@ -43,7 +43,6 @@ public class DelfiHomework1 {
                 for(int i = 0; i < homePageArticleTitles.size(); i++) {
             if (!homePageArticleTitles.get(i).getText().isEmpty()) {
                 System.out.println(i + " " + homePageArticleTitles.get(i).getText());
-
             }
         }
 
@@ -55,7 +54,6 @@ public class DelfiHomework1 {
 
         if (!browser.findElements(ARTICLE_PAGE_TITLE_COMMENTS).isEmpty()) {
             browser.findElement(ARTICLE_PAGE_TITLE_COMMENTS).click();
-
         }
 
         if (!browser.findElements(COMMENTS_PAGE_TITLE).isEmpty()) {
@@ -63,10 +61,9 @@ public class DelfiHomework1 {
             System.out.println(commentsPageTitle);
             Assertions.assertEquals(homePageArticleTitle, commentsPageTitle, "Wrong title!");
         }
-
         Assertions.assertEquals(homePageArticleTitle, articlePageTitle, "Wrong title!");
-
     }
+
     @AfterEach
     public void closeBrowser() {
         browser.close();
